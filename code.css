@@ -1,91 +1,137 @@
 body {
-    /* Apply the background image */
     background-image: 
-        /* First layer: Gradient overlay */
         linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
         linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
-        /* Second layer: Background image */
         url('back.jpg');
+    background-size: cover;
+    background-position: center;
 }
-.floatimg{
+
+.floatimg {
     float: left;
-    padding-right: 660px;
-    padding-top: 0cap;
+    padding-right: 20px; /* Adjusted for smaller screens */
 }
-select{
-    background-color:transparent;
+
+select {
+    background-color: transparent;
     padding: 5px;
     color: white;
     border-radius: 10px;
-    border-color: rgb(94,94,94);
-    
+    border-color: rgb(94, 94, 94);
 }
 
-#k{
-    padding-left: 90px;
+#k {
+    padding: 20px; /* Adjusted for smaller screens */
 }
-#l{
-    padding-top: 75px;
+
+#l {
+    padding-top: 20px; /* Adjusted for smaller screens */
     padding-right: 10px;
 }
-#sign{
+
+#sign {
     border-radius: 10px;
     padding: 5px;
-    
     width: 80px;
     height: 35px;
-    
 }
-.inline{
-    display:inline-block;
+
+.inline {
+    display: inline-block;
 }
-button{
-    background-color: rgb(229,9,20);
+
+button {
+    background-color: rgb(229, 9, 20);
     color: white;
     width: 80px;
     height: 40px;
     border-radius: 10px;
     border-style: none;
 }
-#ff{
+
+#ff {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 180px;
+    padding: 20px; /* Adjusted for smaller screens */
 }
-#bb{
+
+#bb {
     color: white;
-    font-size: 48px;
-    font-style:normal;
+    font-size: 32px; /* Adjusted for smaller screens */
+    font-style: normal;
 }
-#bh{
+
+#bh {
     color: white;
-    font-size: 25px;
-    font-style:normal;
+    font-size: 20px; /* Adjusted for smaller screens */
+    font-style: normal;
 }
-#bj{
+
+#bj {
     color: white;
-    font-size: 20px;
-    font-style:normal;
+    font-size: 18px; /* Adjusted for smaller screens */
+    font-style: normal;
 }
-input{
-    width: 373px;
+
+input {
+    width: 90%; /* Responsive width */
+    max-width: 373px; /* Limit max width */
     height: 56px;
-    background-color: rgb(17,15,16,0.8);
+    background-color: rgba(17, 15, 16, 0.8);
     border-radius: 7px;
-    border-color:rgb(94,94,94); 
+    border-color: rgb(94, 94, 94);
     border-style: solid;
 }
-::placeholder{
+
+::placeholder {
     color: rgb(150, 147, 147);
     font-size: large;
 }
-#arr{
+
+#arr {
     width: 23px;
     height: 14px;
 }
-#butt{width: 212px;
-height: 57px;
-font-size: 20px;
-border-radius: 5px;
+
+#butt {
+    width: 90%; /* Responsive width */
+    max-width: 212px; /* Limit max width */
+    height: 57px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #k {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .floatimg {
+        float: none;
+        display: block;
+        margin: 0 auto; /* Center the logo */
+    }
+
+    #bb {
+        font-size: 24px; /* Smaller size for mobile */
+    }
+
+    #bh, #bj {
+        font-size: 16px; /* Smaller size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    #bb {
+        font-size: 20px; /* Even smaller for very small screens */
+    }
+
+    #bh, #bj {
+        font-size: 14px; /* Even smaller for very small screens */
+    }
+
+    input, #butt {
+        width: 100%; /* Full width for mobile */
+    }
 }
