@@ -1,0 +1,91 @@
+body {
+    /* Apply the background image */
+    background-image: 
+        /* First layer: Gradient overlay */
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+        /* Second layer: Background image */
+        url('back.jpg');
+}
+.floatimg{
+    float: left;
+    padding-right: 660px;
+    padding-top: 0cap;
+}
+select{
+    background-color:transparent;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(94,94,94);
+    
+}
+
+#k{
+    padding-left: 90px;
+}
+#l{
+    padding-top: 75px;
+    padding-right: 10px;
+}
+#sign{
+    border-radius: 10px;
+    padding: 5px;
+    
+    width: 80px;
+    height: 35px;
+    
+}
+.inline{
+    display:inline-block;
+}
+button{
+    background-color: rgb(229,9,20);
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+}
+#ff{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 180px;
+}
+#bb{
+    color: white;
+    font-size: 48px;
+    font-style:normal;
+}
+#bh{
+    color: white;
+    font-size: 25px;
+    font-style:normal;
+}
+#bj{
+    color: white;
+    font-size: 20px;
+    font-style:normal;
+}
+input{
+    width: 373px;
+    height: 56px;
+    background-color: rgb(17,15,16,0.8);
+    border-radius: 7px;
+    border-color:rgb(94,94,94); 
+    border-style: solid;
+}
+::placeholder{
+    color: rgb(150, 147, 147);
+    font-size: large;
+}
+#arr{
+    width: 23px;
+    height: 14px;
+}
+#butt{width: 212px;
+height: 57px;
+font-size: 20px;
+border-radius: 5px;
+}
